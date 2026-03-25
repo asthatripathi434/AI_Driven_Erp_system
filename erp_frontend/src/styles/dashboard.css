@@ -1,0 +1,422 @@
+/* Global reset to avoid unexpected clipping/margins */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* App container: two columns, full viewport height */
+.dashboard-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  /* lock to viewport */
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+  color: #2468d6;
+}
+
+/* Sidebar: full height, scrolls if needed, profile pinned bottom via flex */
+.sidebar {
+  width: 240px;
+  background-color: #2665be;
+  color: white;
+  padding: 1.7rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* keeps profile at bottom */
+  align-items: flex-start;
+  height: 100%;
+  /* match container height */
+  overflow-y: auto;
+  /* sidebar scrolls if content exceeds */
+}
+
+.sidebar-top,
+.sidebar-bottom {
+  width: 100%;
+}
+
+.sidebar-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sidebar-divider {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #052df533;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+/* Profile Section */
+.profile-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  padding-top: 1rem;
+  border-top: 2px solid #ffffff33;
+}
+
+.profile-details {
+  padding: 0.5rem 0.5rem 1rem;
+}
+
+.profile-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.profile-details li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: white;
+}
+
+/* Main Content: full height column, scrolls independently */
+.main-content {
+  flex: 1;
+  height: 100%;
+  /* match container height */
+  overflow-y: auto;
+  /* main scroll */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Welcome Banner: sits at the top, never clipped */
+.welcome-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.welcome-banner h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.welcome-banner p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: #475569;
+}
+
+.logout-btn {
+  background-color: #4b73ac;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #5a84be;
+}
+
+/* ID Card */
+.id-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.id-photo {
+  width: 120px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 1.5rem;
+}
+
+.id-details h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.id-details p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+/* Info Hub */
+/* Info Hub */
+.info-hub {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  margin-bottom: 2rem;
+  /* auto-fill ensures multiple columns are created if space allows */
+  gap: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.info-card {
+
+
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  transition: box-shadow 0.2s ease;
+  display: flex;
+  /* keeps content aligned nicely */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* Global reset to avoid unexpected clipping/margins */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* App container: two columns, full viewport height */
+.dashboard-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  /* lock to viewport */
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1e293b;
+}
+
+/* Sidebar: full height, scrolls if needed, profile pinned bottom via flex */
+.sidebar {
+  width: 240px;
+  background-color: #010a17;
+  color: white;
+  padding: 1.7rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* keeps profile at bottom */
+  align-items: flex-start;
+  height: 100%;
+  /* match container height */
+  overflow-y: auto;
+  /* sidebar scrolls if content exceeds */
+}
+
+.sidebar-top,
+.sidebar-bottom {
+  width: 100%;
+}
+
+.sidebar-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sidebar-divider {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #052df533;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+/* Profile Section */
+.profile-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  padding-top: 1rem;
+  border-top: 2px solid #ffffff33;
+}
+
+.profile-details {
+  padding: 0.5rem 0.5rem 1rem;
+}
+
+.profile-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.profile-details li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: white;
+}
+
+/* Main Content: full height column, scrolls independently */
+.main-content {
+  flex: 1;
+  height: 100%;
+  /* match container height */
+  overflow-y: auto;
+  /* main scroll */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Welcome Banner: sits at the top, never clipped */
+.welcome-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.welcome-banner h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.welcome-banner p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: #475569;
+}
+
+.logout-btn {
+  background-color: #4b73ac;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #5a84be;
+}
+
+/* ID Card */
+.id-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.id-photo {
+  width: 120px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 1.5rem;
+}
+
+.id-details h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.id-details p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+/* Info Hub */
+/* Info Hub */
+.info-hub {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  margin-bottom: 2rem;
+  /* auto-fill ensures multiple columns are created if space allows */
+  gap: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.info-card {
+
+
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(84, 11, 172, 0.05);
+  border: 1px solid #e2e8f0;
+  transition: box-shadow 0.2s ease;
+  display: flex;
+  /* keeps content aligned nicely */
+  flex-direction: column;
+  justify-content: space-between;
+}

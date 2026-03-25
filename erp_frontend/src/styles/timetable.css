@@ -1,0 +1,87 @@
+.timetable-fullscreen {
+  min-height: 100vh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timetable-fullscreen h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 2rem;
+}
+
+.timetable-grid {
+  width: 100%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.timetable-grid th,
+.timetable-grid td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  font-size: 1rem;
+  color: #334155;
+}
+
+.timetable-grid th {
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+
+.break-row td {
+  background: #bfdbeb;
+  font-weight: 600;
+  color: #020202;
+}
+
+/* ===== Teacher Mapping Table ===== */
+.teacher-map {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.teacher-map h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1e293b;
+  text-align: center;
+}
+
+.teacher-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.teacher-table th,
+.teacher-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 1rem;
+  color: #334155;
+}
+
+.teacher-table th {
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+
+.teacher-table tr:last-child td {
+  border-bottom: none;
+}

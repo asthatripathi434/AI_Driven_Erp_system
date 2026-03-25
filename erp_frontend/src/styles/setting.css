@@ -1,0 +1,121 @@
+.settings-page {
+     padding: 2rem;
+     max-width: 700px;
+     margin: auto;
+     font-family: "Segoe UI", Arial, sans-serif;
+     background-color: #f8fafc;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.settings-header h1 {
+     font-size: 2rem;
+     margin-bottom: 0.5rem;
+     color: #1e293b;
+     text-align: center;
+}
+
+.settings-header p {
+     font-size: 1rem;
+     color: #475569;
+     text-align: center;
+     margin-bottom: 2rem;
+}
+
+.settings-actions {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     justify-content: center;
+     margin-bottom: 2rem;
+}
+
+.settings-actions button {
+     display: flex;
+     align-items: center;
+     gap: 0.6rem;
+     padding: 0.8rem 1rem;
+     font-size: 1rem;
+     font-weight: 600;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+     background-color: #2563eb;
+     color: white;
+     transition: background-color 0.2s ease;
+}
+
+.settings-actions button:hover {
+     background-color: #1e40af;
+}
+
+.icon {
+     flex-shrink: 0;
+     color: white;
+}
+
+.settings-form-area {
+     margin-top: 1rem;
+}
+
+.form-box {
+     background-color: #ffffff;
+     padding: 1.5rem;
+     border-radius: 10px;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+     margin-bottom: 2rem;
+}
+
+.form-box h2 {
+     margin-bottom: 1rem;
+     color: #1e293b;
+}
+
+.form-box label {
+     font-weight: 600;
+     margin-bottom: 0.5rem;
+     display: block;
+     color: #334155;
+}
+
+.form-box input,
+.form-box textarea {
+     width: 100%;
+     padding: 0.75rem;
+     margin-bottom: 1rem;
+     border: 1px solid #cbd5e1;
+     border-radius: 6px;
+     font-size: 1rem;
+}
+
+.form-box button {
+     padding: 0.75rem 1.2rem;
+     font-weight: bold;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+     transition: background-color 0.2s ease;
+}
+
+.form-box .primary {
+     background-color: #10b981;
+     color: white;
+}
+
+.form-box .primary:hover {
+     background-color: #059669;
+}
+
+.form-box .danger {
+     background-color: #ef4444;
+     color: white;
+}
+
+.form-box .danger:hover {
+     background-color: #dc2626;
+}
+
+.active-form {
+     border: 2px solid #2563eb;
+}
+

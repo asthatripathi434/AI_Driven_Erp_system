@@ -1,0 +1,36 @@
+.assignments-fullscreen {
+  min-height: 100vh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.assignments-fullscreen h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 2rem;
+}
+
+.assignment-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.assignment-card h2 {
+  font-size: 1.4rem;
+  color: #2563eb;
+  margin-bottom: 1rem;
+}
+
+.assignment-card p {
+  font-size: 1rem;
+  color: #475569;
+  margin: 0.5rem 0;
+}

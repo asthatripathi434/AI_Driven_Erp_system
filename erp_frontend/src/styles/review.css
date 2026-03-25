@@ -1,0 +1,883 @@
+/* General page setup */
+.overview-page {
+     min-height: 100vh;
+     width: 100%;
+     font-family: "Segoe UI", Arial, sans-serif;
+     color: #007bff;
+     display: flex;
+     flex-direction: column;
+     overflow-x: hidden;
+}
+.blue-overlay {
+     background: none;
+     /* no color overlay */
+}
+
+/* Top navigation bar */
+.top-nav.white-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background: white;
+     padding: 15px 30px;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+     position: relative;
+     z-index: 2;
+}
+
+.white-header .school-name {
+     font-size: 1.4rem;
+     font-weight: 700;
+     color: #0b0c0c;
+     display: flex;
+     align-items: center;
+     gap: 8px;
+}
+
+.white-header .nav-buttons {
+     display: flex;
+     gap: 12px;
+}
+
+.white-header .nav-btn {
+     background: #002fff;
+     color: #fff;
+     border: none;
+     padding: 8px 18px;
+     border-radius: 6px;
+     font-weight: 500;
+     cursor: pointer;
+     transition: all 0.3s ease;
+}
+
+.white-header .nav-btn:hover {
+     background: #0056b3;
+     transform: translateY(-2px);
+}
+
+/* Hero section */
+.hero-section {
+     min-height: 100vh;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     padding: 80px 20px;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.hero-content {
+     position: relative;
+     z-index: 1;
+     max-width: 800px;
+     margin: 0 auto;
+}
+
+.welcome-text {
+     font-size: 1.4rem;
+     font-weight: 600;
+     color: #fff;
+     margin-bottom: 15px;
+}
+
+.school-name-large {
+     font-family: 'Times New Roman', serif;
+     font-weight: 700;
+     font-size: 3.5rem;
+     color: #fff;
+     margin-bottom: 10px;
+}
+
+.location-text {
+     font-size: 1.4rem;
+     color: #f0f0f0;
+     margin-bottom: 20px;
+}
+
+.mission-text {
+     font-size: 1.1rem;
+     margin-bottom: 30px;
+     line-height: 1.6;
+     color: #eaeaea;
+}
+
+/* Hero buttons */
+.hero-buttons-inline {
+     display: flex;
+     justify-content: center;
+     gap: 12px;
+     margin-top: 20px;
+}
+
+.enroll-btn,
+.learn-btn {
+     padding: 12px 24px;
+     font-size: 1rem;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+     font-weight: 600;
+     transition: all 0.3s ease;
+}
+
+.enroll-btn {
+     background-color: #ff9800;
+     color: #fff;
+}
+
+.enroll-btn:hover {
+     background-color: #e68900;
+     transform: translateY(-2px);
+}
+
+.learn-btn {
+     background-color: #007bff;
+     color: #fff;
+}
+
+.learn-btn:hover {
+     background-color: #b33300;
+     transform: translateY(-2px);
+}
+
+/* Activities section */
+.activities-section {
+     background-color:#f9f9f9;
+     padding: 80px 20px;
+     text-align: center;
+     
+     
+}
+
+
+.activities-header {
+     margin-bottom: 50px;
+}
+
+.subtitle {
+     color: #007bff;
+     font-weight: 600;
+     margin-bottom: 10px;
+}
+
+.title {
+     font-size: 2.2rem;
+     font-weight: 700;
+     margin-bottom: 15px;
+     color: #222;
+}
+
+.description {
+     font-size: 1.1rem;
+     color: #555;
+}
+
+.activities-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+     gap: 30px;
+   
+}
+
+/* Activity cards */
+.activity-card {    
+     background: hsl(0, 100%, 98%);
+     border-radius: 12px;
+     padding: 25px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+     transition: all 0.3s ease;
+}
+
+.activity-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.icon-box {
+     width: 60px;
+     height: 60px;
+     border-radius: 12px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto 20px;
+     transition: transform 0.3s ease;
+}
+
+.activity-card:hover .icon-box {
+     transform: scale(1.1);
+}
+
+.icon-box.blue {
+     background-color: #e0f0ff;
+     color: #007bff;
+}
+
+.icon-box.green {
+     background-color: #e6f7e6;
+     color: #28a745;
+}
+
+.icon-box.amber {
+     background-color: #fff3cd;
+     color: #ff9800;
+}
+
+.activity-title {
+     font-size: 1.2rem;
+     font-weight: 600;
+     margin-bottom: 10px;
+     color: #222;
+}
+
+.activity-description {
+     font-size: 1rem;
+     color: #555;
+}
+
+/* Commitment section */
+.commitment-section {
+     background: #f4f9ff;
+     padding: 80px 20px;
+     text-align: center;
+     
+}
+
+.commitment-section .header h2 {
+     font-size: 2.2rem;
+     font-weight: 700;
+     margin-bottom: 10px;
+     color: #007bff;
+}
+
+.commitment-section .subtitle {
+     font-size: 1.1rem;
+     font-weight: 600;
+     color: #333;
+     margin-bottom: 10px;
+}
+
+.commitment-section .description {
+     font-size: 1rem;
+     color: #555;
+     margin-bottom: 40px;
+}
+
+.commitment-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+     gap: 30px;
+}
+
+.commitment-card {
+     background: #fff;
+     border-radius: 12px;
+     padding: 25px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+     transition: all 0.3s ease;
+}
+
+.commitment-card:hover {
+     transform: translateY(-5px);
+}
+
+.commitment-icon {
+     width: 60px;
+     height: 60px;
+     background-color: #e0f0ff;
+     color: #007bff;
+     border-radius: 12px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto 20px;
+     transition: transform 0.3s ease;
+}
+
+.commitment-card:hover .commitment-icon {
+     transform: scale(1.1);
+}
+
+.commitment-card h3 {
+     font-size: 1.2rem;
+     font-weight: 600;
+     margin-bottom: 10px;
+     color: #222;
+}
+
+.commitment-card p {
+     font-size: 1rem;
+     color: #555;
+}
+
+/* Education card */
+.education-card {
+     background: #fff;
+     border-radius: 12px;
+     padding: 30px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+     max-width: 800px;
+     margin: 40px auto;
+     text-align: center;
+     transition: all 0.3s ease;
+}
+
+.education-card:hover {
+     transform: translateY(-5px);
+}
+
+.education-card h3 {
+     font-size: 1.5rem;
+     font-weight: 600;
+     margin-bottom: 15px;
+     color: #073b72;
+}
+
+.education-card p {
+     font-size: 1rem;
+     color: #555;
+     margin-bottom: 20px;
+     line-height: 1.6;
+}
+
+.education-card .contact-btn {
+     background: #297fd6;
+     color: #fff;
+     border: none;
+     padding: 12px 24px;
+     font-weight: 600;
+     border-radius: 6px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+}
+
+.education-card .contact-btn:hover {
+     background: #0056b3;
+     transform: translateY(-2px);
+}
+/* Footer */
+.footer {
+     background: #17579c;
+     /* plain solid navy box */
+     padding: 60px 20px;
+     text-align: center;
+     /* center all text */
+}
+
+/* Force all text inside footer to white */
+.footer,
+.footer * {
+     color: #ffffff !important;
+     /* override everything */
+}
+
+/* Footer content */
+.footer-content {
+     max-width: 1200px;
+     margin: 0 auto;
+     line-height: 1.6;
+}
+
+/* School heading */
+.footer h4 {
+     font-size: 1.6rem;
+     margin-bottom: 10px;
+     font-weight: 700;
+}
+
+/* Tagline / mission text */
+.footer .tagline {
+     font-size: 1rem;
+     margin-bottom: 20px;
+}
+
+/* Footer columns */
+.footer-columns {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     /* center columns */
+     margin-top: 30px;
+     text-align: center;
+}
+
+.footer-columns div {
+     flex: 1;
+     min-width: 200px;
+     margin-bottom: 20px;
+}
+
+/* Column headings */
+.footer-columns h5 {
+     font-size: 1.2rem;
+     margin-bottom: 10px;
+     font-weight: 600;
+}
+
+/* Column text */
+.footer-columns p {
+     margin: 4px 0;
+}
+
+/* Copyright */
+.footer .copyright {
+     margin-top: 30px;
+     font-size: 0.9rem;
+     border-top: 1px solid rgba(255, 255, 255, 0.3);
+     padding-top: 20px;
+}
+
+
+/**
+/* Shared card styling */
+.activity-card,
+.commitment-card,
+.education-card {
+     background: linear-gradient(145deg, #ffffff, #f9f9f9);
+     /* subtle gradient */
+     border-radius: 16px;
+     padding: 32px 28px;
+     max-width: 100%;
+     max-height: 500px;
+     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+     transition: all 0.35s ease;
+     border-top: 4px solid #007bff;
+     /* accent strip */
+}
+
+/* Hover effect */
+.activity-card:hover,
+.commitment-card:hover,
+.education-card:hover {
+     transform: translateY(-8px) scale(1.02);
+     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Titles inside cards */
+.activity-title,
+.commitment-card h3,
+.education-card h3 {
+     font-size: 1.5rem;
+     font-weight: 700;
+     margin-bottom: 14px;
+     color: #222;
+     letter-spacing: 0.5px;
+}
+
+/* Text inside cards */
+.activity-description,
+.commitment-card p,
+.education-card p {
+     font-size: 1.05rem;
+     color: #555;
+     line-height: 1.7;
+}
+/* Activities grid and Commitment grid */
+.activities-grid,
+.commitment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
+  gap: 20px;              /* smaller gap between cards */
+  width: 100%;
+  max-width: 1000px;      /* narrower overall grid */
+  margin: 0 auto;
+}
+/* Activities grid and Commitment grid */
+.activities-grid,
+.commitment-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     /* exactly 3 columns */
+     gap: 30px;
+     width: 100%;
+     max-width: 1200px;
+     /* optional: keeps grid centered */
+     margin: 0 auto;
+}
+/* Icon box refinement */
+.icon-box,
+.commitment-icon {
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto 22px;
+     font-size: 1.6rem;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity-card:hover .icon-box,
+.commitment-card:hover .commitment-icon {
+     transform: scale(1.15);
+     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Education card special styling */
+.education-card {
+     border-top: 4px solid #ff9800;
+     max-width: 550px;
+   
+     /* orange accent */
+     background: linear-gradient(145deg, #ffffff, #fdfdfd);
+}
+
+.education-card h3 {
+     color: #073b72;
+     font-size: 1.6rem;
+}
+
+.education-card .contact-btn {
+     background: #297fd6;
+     color: #fff;
+     border: none;
+     padding: 14px 28px;
+     font-weight: 600;
+     border-radius: 8px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.education-card .contact-btn:hover {
+     background: #0056b3;
+     transform: translateY(-3px);
+}
+
+
+
+/* Shared card styling */
+/* Hero section */
+/* Hero section */
+.hero-section {
+     min-height: 100vh;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     padding: 100px 20px;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+/* Overlay: darker, ensures text contrast */
+.blue-overlay {
+     position: absolute;
+     inset: 0;
+     background: rgba(15, 30, 60, 0.85);
+     /* deep navy overlay */
+     z-index: 0;
+}
+
+/* Hero content */
+.hero-content {
+     position: relative;
+     z-index: 1;
+     max-width: 900px;
+     margin: 0 auto;
+     color: hsl(0, 67%, 99%);
+}
+
+/* Welcome text */
+.welcome-text {
+     font-size: 3rem;
+     font-weight: 900;
+     font-style: italic;
+     text-transform: uppercase;
+     letter-spacing: 4px;
+     color: #ffcc00;
+     /* golden yellow */
+     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+     /* strong shadow */
+     margin-bottom: 20px;
+}
+
+/* School name — different font */
+.school-name-large {
+     font-family: 'Merriweather', serif;
+     /* classic serif font */
+     font-weight: 900;
+     font-size: 5rem;
+     color: #ffffff;
+     margin-bottom: 25px;
+     text-shadow: 4px 4px 14px rgba(0, 0, 0, 0.9);
+}
+
+/* Location */
+.location-text {
+     font-size: 2rem;
+     font-weight: 700;
+     font-style: italic;
+     color: #e0e0e0;
+     margin-bottom: 30px;
+}
+
+/* Mission statement */
+.mission-text {
+     font-size: 1.5rem;
+     font-weight: 600;
+     font-style: italic;
+     margin-bottom: 45px;
+     line-height: 1.9;
+     color: #f5f5f5;
+     font-family: 'Roboto', sans-serif;
+     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Hero buttons */
+.hero-buttons-inline {
+     display: flex;
+     justify-content: center;
+     gap: 25px;
+     margin-top: 25px;
+}
+
+.enroll-btn,
+.learn-btn {
+     padding: 16px 36px;
+     font-size: 1.3rem;
+     border: none;
+     border-radius: 10px;
+     cursor: pointer;
+     font-weight: 800;
+     transition: all 0.3s ease;
+     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+     text-transform: uppercase;
+     letter-spacing: 1.5px;
+}
+
+.enroll-btn {
+     background: linear-gradient(135deg, #ff9800, #f57c00);
+     color: #fff;
+}
+
+.enroll-btn:hover {
+     background: linear-gradient(135deg, #e68900, #d84315);
+     transform: translateY(-3px);
+}
+
+.learn-btn {
+     background: linear-gradient(135deg, #2196f3, #1976d2);
+     color: #fff;
+}
+
+.learn-btn:hover {
+     background: linear-gradient(135deg, #1565c0, #0d47a1);
+     transform: translateY(-3px);
+}
+
+
+/* Hero stats boxes */
+.hero-stats {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     /* reduce spacing between boxes */
+     margin-top: 20px;
+     /* less margin above */
+     position: relative;
+     z-index: 2;
+     flex-wrap: wrap;
+     /* responsive for smaller screens */
+}
+
+.stat-box {
+     background: rgba(0, 0, 0, 0.6);
+     padding: 8px 12px;
+     /* small but comfortable padding */
+     border-radius: 8px;
+     /* slightly smaller corners */
+     text-align: center;
+     color: #fff;
+     font-size: 0.9rem;
+     /* smaller text */
+     font-weight: 600;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+     min-width: 120px;
+     /* narrower box */
+     min-height: 60px;
+     /* shorter box */
+     transition: transform 0.3s ease;
+}
+
+.stat-box strong {
+     font-size: 1.4rem;
+     /* smaller number size */
+     display: block;
+     margin-bottom: 4px;
+     color: #ffcc00;
+}
+
+.stat-box:hover {
+     transform: translateY(-3px);
+     /* lighter hover lift */
+}
+
+.gallery-section {
+     background-color: white;
+     /* 🔹 sets the background to white */
+     padding: 40px 20px;
+     /* optional spacing around content */
+}
+
+
+.gallery-subtitle {
+     font-size: 1.2rem;
+     font-weight: 600;
+     letter-spacing: 1px;
+     /* ✅ subtle spacing */
+     text-transform: uppercase;
+     /* ✅ modern look */
+     color: #007bff;
+     margin-bottom: 8px;
+}
+
+.gallery-title {
+     font-size: 2.8rem;
+     /* ✅ larger, more prominent */
+     font-weight: 800;
+     color: #0e0d0d;
+     margin-bottom: 12px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     /* ✅ wide spacing for impact */
+     background: linear-gradient(90deg, #0615eb, #060dea);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     /* ✅ gradient text effect */
+}
+
+.gallery-description {
+     font-size: 1.1rem;
+     color: hsl(0, 0%, 2%);
+     max-width: 700px;
+     font-weight: bold;
+     margin: -20px auto 0 auto;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     margin: 0 auto;
+     line-height: 1.6;
+}
+.gallery-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 30px;
+     max-width: 1000px;
+     margin: 0 auto;
+}
+
+.gallery-card {
+     border-radius: 12px;
+     overflow: hidden;
+     transition: transform 0.3s ease;
+     height: 300px;
+     /* same height as commitment cards */
+}
+
+.gallery-card:hover {
+     transform: translateY(-5px);
+}
+
+.gallery-card img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     /* ensures the image fills the card nicely */
+     display: block;
+}
+
+
+/* Hero Section */
+.hero-section {
+     position: relative;
+     background-size: cover;
+     background-position: center;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.blue-overlay {
+     position: absolute;
+     inset: 0;
+     background: rgba(23, 87, 156, 0.6);
+     /* school theme overlay */
+}
+
+.hero-content {
+     position: relative;
+     text-align: center;
+     color: #fff;
+     max-width: 900px;
+     padding: 20px;
+}
+
+/* ✅ Welcome Image / Logo */
+.welcome-image {
+     width: clamp(120px, 20vw, 220px);
+     /* responsive size */
+     height: auto;
+     margin: 0 auto 1rem auto;
+     display: block;
+}
+
+/* Hero Text */
+.welcome-text {
+     font-size: 1.4rem;
+     font-weight: 600;
+     margin-bottom: 0.5rem;
+     color: #ffeb3b;
+     /* yellow highlight */
+}
+
+.school-name-large {
+     font-size: clamp(2rem, 5vw, 3.5rem);
+     font-weight: 800;
+     margin: 0.5rem 0;
+}
+
+.location-text {
+     font-size: clamp(1.2rem, 3vw, 1.8rem);
+     font-style: italic;
+     margin-bottom: 1rem;
+}
+
+.mission-text {
+     font-size: 1rem;
+     line-height: 1.6;
+     margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.hero-buttons-inline {
+     display: flex;
+     gap: 1rem;
+     justify-content: center;
+     flex-wrap: wrap;
+     margin-bottom: 2rem;
+}
+
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+     .hero-content {
+          padding: 10px;
+     }
+
+     .hero-buttons-inline {
+          flex-direction: column;
+          gap: 0.8rem;
+     }
+
+     .stat-box {
+          flex: 1 1 100%;
+          text-align: center;
+     }
+}

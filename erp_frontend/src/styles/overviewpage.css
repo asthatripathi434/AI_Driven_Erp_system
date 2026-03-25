@@ -1,0 +1,390 @@
+html,
+body {
+     height: 100%;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Background container */
+.overview-page {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100vh;
+     width: 100vw;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     z-index: 0;
+     /* base layer */
+}
+
+/* Semi-transparent overlay */
+.background-overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background: rgba(0, 0, 0, 0.35);
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     padding-right: 4rem;
+     box-sizing: border-box;
+     z-index: 1;
+}
+
+/* School banner stays at top */
+.school-banner-block {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background: rgba(0, 0, 0, 0.7);
+     padding: 1rem 2rem;
+     display: flex;
+     gap: 8px;
+     align-items: baseline;
+     z-index: 2;
+}
+
+.school-name {
+     font-size: 1.8rem;
+     font-weight: 700;
+     color: #f3f1f1;
+     font-style: italic;
+}
+
+.school-location {
+     font-size: 1.2rem;
+     color: #ddd;
+     font-style: italic;
+     font-weight: bold;
+}
+
+html,
+body {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     width: 100%;
+}
+
+.blue-overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: linear-gradient(135deg, rgba(8, 111, 215, 0.251) 0%, rgba(6, 182, 138, 0.363) 100%);
+     z-index: 0;
+}
+
+.login-page {
+     position: fixed;
+     /* lock to viewport */
+     top: 0;
+     left: 0;
+     width: 100vw;
+     /* full viewport width */
+     height: 100vh;
+     /* full viewport height */
+     background-image: url('../assets/gallery/image2.jpg');
+     /* adjust path if needed */
+     background-size: cover;
+     /* stretch to fill */
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     /* stays fixed when scrolling */
+}
+
+
+/* ✅ Remove white overlay */
+.background-overlay {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: transparent;
+     /* ← this removes the white tint */
+}
+
+/* ✅ Keep school banner visible */
+.school-banner-block {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background-color: #0b2757c0;
+     padding: 0.8rem 2rem;
+     display: flex;
+     justify-content: flex-start;
+     align-items: baseline;
+     gap: 6px;
+     z-index: 2;
+}
+
+.school-name {
+     font-size: 2rem;
+     font-weight: 700;
+     color: #ffffff;
+}
+
+.school-location {
+     font-size: 1.3rem;
+     font-weight: 400;
+     color: #ffffff;
+}
+
+/* Login box container */
+.login-box {
+     background: #f0f8ff;
+     /* light blue background */
+     padding: 30px;
+     border-radius: 10px;
+     max-width: 400px;
+     margin: 40px 0 40px auto;
+     /* ✅ pushes box to the right */
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.login-title {
+     text-align: center;
+     margin-bottom: 20px;
+     font-size: 22px;
+     font-weight: bold;
+     color: #004080;
+}
+
+/* Labels */
+.login-form label {
+     display: flex;
+     justify-content: space-between;
+     font-weight: 500;
+     margin-top: 12px;
+     color: #333;
+}
+
+/* Inputs */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+     width: 100%;
+     padding: 10px;
+     margin-top: 6px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     font-size: 15px;
+}
+
+/* Forgot password link */
+.forgot-password {
+     font-size: 13px;
+     color: #007bff;
+     cursor: pointer;
+}
+
+.forgot-password:hover {
+     text-decoration: underline;
+}
+
+/* Remember me checkbox */
+.remember-me {
+     display: flex;
+     align-items: center;
+     margin: 12px 0;
+     font-size: 14px;
+}
+
+.remember-me input {
+     margin-right: 6px;
+}
+
+/* Buttons */
+.login-button,
+.overview-button {
+     width: 100%;
+     padding: 12px;
+     margin-top: 12px;
+     font-size: 16px;
+     font-weight: bold;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+     transition: background 0.3s ease;
+}
+
+/* Primary login button */
+.login-button {
+     background-color: #007bff;
+     color: #fff;
+}
+
+.login-button:hover {
+     background-color: #0056b3;
+}
+
+/* Secondary overview button */
+.overview-button {
+     background-color: #007bff;
+     color: #fff;
+}
+
+.overview-button:hover {
+     background-color: #0056b3;
+}
+
+/** signup */
+.signup-box {
+     background: #f0f8ff;
+     padding: 20px;
+     border-radius: 10px;
+     width: 380px;
+     min-height: 700px;
+     margin: 80px 0 40px auto;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     display: flex;
+     flex-direction: column;
+}
+
+/* Title */
+.signup-box .login-title {
+     text-align: center;
+     margin-bottom: 20px;
+     font-size: 22px;
+     font-weight: bold;
+     color: #004080;
+}
+
+/* Form labels */
+.signup-form label {
+     display: flex;
+     justify-content: space-between;
+     font-weight: 500;
+     margin-top: 12px;
+     color: #333;
+}
+
+/* Inputs & Select */
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form input[type="number"],
+.signup-form select {
+     width: 100%;
+     padding: 10px;
+     margin-top: 6px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     font-size: 15px;
+}
+
+/* Buttons */
+.signup-form .primary,
+.signup-box .overview-button {
+     width: 100%;
+     padding: 12px;
+     margin-top: 12px;
+     font-size: 16px;
+     font-weight: bold;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+     transition: background 0.3s ease;
+}
+
+/* Primary signup button */
+.signup-form .primary {
+     background-color: #007bff;
+     color: #fff;
+}
+
+.signup-form .primary:hover {
+     background-color: #0056b3;
+}
+
+/* Secondary overview button */
+.signup-box .overview-button {
+     background-color: #6c757d;
+     color: #fff;
+     text-transform: uppercase;
+     /* ✅ matches your request */
+}
+
+.signup-box .overview-button:hover {
+     background-color: #5a6268;
+}
+
+
+/**teacher signup*/
+
+/** Teacher Signup */
+.teacher-box {
+     background: #f0f8ff;
+     padding: 20px;
+     border-radius: 10px;
+     width: 380px;
+     height: 650px;
+     margin: 80px 0 40px auto;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     display: flex;
+     flex-direction: column;
+
+}
+
+/* Title */
+.teacher-box .login-title {
+     text-align: center;
+     margin-bottom: 20px;
+     font-size: 22px;
+     font-weight: bold;
+     color: #004080;
+}
+
+
+
+.signup-form label {
+     display: flex;
+     justify-content: space-between;
+     font-weight: 500;
+     margin-top: 12px;
+     color: #333;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form input[type="number"],
+.signup-form select {
+     width: 100%;
+     padding: 10px;
+     margin-top: 6px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     font-size: 15px;
+}
+
+/* Primary signup button */
+.signup-form .primary {
+     margin-top: auto;
+     /* ✅ button pinned at bottom */
+     background-color: #007bff;
+     color: #fff;
+     font-weight: bold;
+     padding: 12px;
+     margin-top: 12px;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+     transition: background 0.3s ease;
+}
+
+.signup-form .primary:hover {
+     background-color: #0056b3;
+}

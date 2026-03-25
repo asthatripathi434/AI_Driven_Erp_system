@@ -1,0 +1,57 @@
+.grade-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-top: 2rem;
+}
+
+.grade-card h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+}
+
+.student-info {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #334155;
+}
+
+.subjects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.subjects-table th,
+.subjects-table td {
+  border: 1px solid #e2e8f0;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.subjects-table th {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.summary {
+  font-size: 1.1rem;
+  color: #1e293b;
+  text-align: center;
+}
+
+.back-btn {
+  background-color: #4b73ac;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.back-btn:hover {
+  background-color: #5a84be;
+}

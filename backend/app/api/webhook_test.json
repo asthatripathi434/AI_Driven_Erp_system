@@ -1,0 +1,16 @@
+{
+  "event": "payment.captured",
+  "payload": {
+    "payment": {
+      "entity": {
+        "id": "pay_123456789",
+        "amount": 50000,
+        "currency": "INR",
+        "status": "captured",
+        "method": "card",
+        "email": "student@example.com",
+        "contact": "9876543210"
+      }
+    }
+  }
+}
